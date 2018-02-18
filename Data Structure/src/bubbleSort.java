@@ -1,4 +1,4 @@
-//Ketki Mahajan
+//Bubble sort
 //we check the elements of j loop and find the largest number and then push it to last index
 public class bubbleSort {
 
@@ -12,13 +12,11 @@ public class bubbleSort {
                     arr[j - 1] = temp;
                 }
             }
-
         }
         for (int i = 0; i < arr.length; i++) {
             System.out.print(" " + arr[i]);
         }
     }
-
     public static void main(String[] args) {
         System.out.println("Bubble sort");
         int[] arr = {100, 5, 89, 7, 2};
