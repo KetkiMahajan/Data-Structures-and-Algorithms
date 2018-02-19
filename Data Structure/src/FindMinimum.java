@@ -1,3 +1,4 @@
+//Ketki Mahajan
 public class FindMinimum {
 
     static int findMin(int[] B) {
