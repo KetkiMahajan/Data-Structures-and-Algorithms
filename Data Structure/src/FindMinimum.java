@@ -1,3 +1,5 @@
+//Ketki Mahajan
+//First and Second minimum
 public class FindMinimum {
 
     static int findMin(int[] B) {
