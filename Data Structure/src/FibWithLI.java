@@ -1,5 +1,7 @@
-//ketki mahajan
-//Fibonacci using loop invariant
+/**
+ * Implementation of Data Structure and Algorithms
+ * Created by Ketki Mahajan on 2/19/2018.
+ **/
 public class FibWithLI {
     public static int fib(int n) {
         int[] temp = new int[n + 1];
@@ -17,6 +19,6 @@ public class FibWithLI {
     }
 
     public static void main(String[] args) {
-        System.out.println(fib(3));
+        System.out.println(fib(5));
     }
 }
