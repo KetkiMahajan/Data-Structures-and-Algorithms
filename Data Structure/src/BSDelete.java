@@ -1,3 +1,7 @@
+/**
+ * Implementation of Data Structure and Algorithms
+ * Created by Ketki Mahajan on 1/20/2018.
+ **/
 import java.util.Scanner;
 
 public class BSDelete {
