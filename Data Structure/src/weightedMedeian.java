@@ -1,3 +1,7 @@
+/**
+ * Implementation of Data Structure and Algorithms
+ * Created by Ketki Mahajan on 2/08/2018.
+ **/
 public class weightedMedeian {
     public static int FindkSmallest(int[] A, int p, int r, int SumWM) {
         choosePivot(A, p, r);
