@@ -1,3 +1,7 @@
+/**
+ * Implementation of Data Structure and Algorithms
+ * Created by Ketki Mahajan on 1/17/2018.
+ **/
 public class MaximumProfit {
     public static int maxProfit(int[] prices) {
         int maxCurrent = 0;
@@ -14,9 +18,7 @@ public class MaximumProfit {
             }
         }
         return maxProfit;
-
     }
-
     public static void main(String[] args) {
         int[] arr = {7, 1, 5, 3, 6, 4};
         System.out.println(maxProfit(arr));
