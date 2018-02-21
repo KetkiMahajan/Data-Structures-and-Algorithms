@@ -1,5 +1,8 @@
+/**
+ * Implementation of Data Structure and Algorithms
+ * Created by Ketki Mahajan on 1/02/2018.
+ **/
 import java.util.LinkedList;
-
 public class GraphConstruction {
 
     static void addEdge(Graph g, int u, int v) {
