@@ -1,5 +1,8 @@
+/**
+ * Implementation of Data Structure and Algorithms
+ * Created by Ketki Mahajan on 1/16/2018.
+ **/
 public class MaxSubarrayDAC {
-
     public static int[] findMaxSubarray(int[] A, int low, int high) {
         int[] B = new int[3];
         if (low == high) {
