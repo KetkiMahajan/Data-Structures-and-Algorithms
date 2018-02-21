@@ -1,3 +1,7 @@
+/**
+ * Implementation of Data Structure and Algorithms
+ * Created by Ketki Mahajan on 1/02/2018.
+ **/
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -5,7 +9,6 @@ public class Graph {
     private int V;   // No. of vertices
     private LinkedList<Integer> adjList[]; //Adjacency Lists
 
-    //Constructor
     Graph(int v) {
         V = v;
         adjList = new LinkedList[v];
