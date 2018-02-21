@@ -1,3 +1,8 @@
+
+/**
+ * Implementation of Data Structure and Algorithms
+ * Created by Ketki Mahajan on 1/15/2018.
+ **/
 public class MaxSubarray {
     public static void main(String[] args) {
 
