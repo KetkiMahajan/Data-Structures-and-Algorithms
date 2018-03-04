@@ -1,13 +1,14 @@
 /**
  * Implementation of Data Structure and Algorithms
+ * BFS and DFS
  * Created by Ketki Mahajan on 1/02/2018.
  **/
 import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Graph {
-    private int V;   // No. of vertices
-    private LinkedList<Integer> adjList[]; //Adjacency Lists
+    private int V;
+    private LinkedList<Integer> adjList[];
 
     Graph(int v) {
         V = v;
@@ -15,6 +16,10 @@ public class Graph {
         for (int i = 0; i < v; i++) {
             adjList[i] = new LinkedList<>();
         }
+    }
+    void addEdge(int u, int v) {
+        adjList[u].add(v);
+        adjList[v].add(u);
     }
 
     public static void main(String[] args) {
@@ -24,43 +29,37 @@ public class Graph {
         g.addEdge(0, 4);
         g.addEdge(1, 2);
         g.addEdge(1, 3);
-        g.addEdge(1, 4);
+        g.addEdge(2, 4);
         g.addEdge(2, 3);
         g.addEdge(3, 4);
 
-
         g.printGraph();
+        System.out.println("BFS : ");
         g.BreadthFS(1);
-    }
-
-    void addEdge(int u, int v) {
-        adjList[u].add(v);
-        adjList[v].add(u);
+        System.out.println(" ");
+        System.out.println("DFS : ");
+        g.DFS(1);
     }
 
     void printGraph() {
         for (int j = 0; j < V; j++) {
-            System.out.println("Adjecency list of vertex " + j);
-            System.out.print("head");
-
+            // System.out.println("Adjecency list of vertex " + j);
+            // System.out.print("head");
             for (Integer node : adjList[j]) {
-                System.out.print("," + node);
+                //  System.out.print("," + node);
             }
-            System.out.println(" ");
         }
     }
 
     void BreadthFS(int s) {
         boolean visited[] = new boolean[V];
         LinkedList<Integer> queue = new LinkedList<>();
-
         visited[s] = true;
         queue.add(s);
 
         while (queue.size() != 0) {
-            s = queue.poll();
-            System.out.println(s + " ");
-
+            s = queue.remove();
+            System.out.print(s + " ");
             Iterator<Integer> i = adjList[s].iterator();
 
             while (i.hasNext()) {
@@ -70,6 +69,23 @@ public class Graph {
                     queue.add(n);
                 }
             }
+        }
+    }
+
+    void DFS(int s) {
+        boolean visited[] = new boolean[V];
+        DFS(s, visited);
+    }
+
+    void DFS(int s, boolean[] visited) {
+        visited[s] = true;
+        System.out.print(s + " ");
+
+        Iterator<Integer> i = adjList[s].iterator();
+        while (i.hasNext()) {
+            int n = i.next();
+            if (!visited[n])
+                DFS(n, visited);
         }
     }
 }
