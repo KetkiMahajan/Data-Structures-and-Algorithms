@@ -1,6 +1,6 @@
 /**
  * Implementation of Data Structure and Algorithms
- * BFS and DFS
+ * BFS and DFS Implementations
  * Created by Ketki Mahajan on 03/03/2018.
  **/
 import java.util.Iterator;
@@ -37,7 +37,7 @@ public class Graph {
         System.out.println("BFS : ");
         g.BreadthFS(1);
         System.out.println(" ");
-        System.out.println("DFS : ");
+        System.out.println("PathFindingInGraph : ");
         g.DFS(1);
     }
 
