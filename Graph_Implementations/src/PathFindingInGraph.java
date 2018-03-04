@@ -1,13 +1,13 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-
 /**
  * Implementation of Data Structure and Algorithms
  * Graph implementation
  * To Finding a path between source and destination using DFS
  * Created by Ketki Mahajan on 3/3/2018.
  **/
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
 public class PathFindingInGraph {
     private HashMap<Integer, Node> nodeLookup = new HashMap<>();
 
@@ -63,7 +63,6 @@ public class PathFindingInGraph {
     public static class Node {
         LinkedList<Node> adList = new LinkedList<Node>();
         private int id;
-
         private Node(int id) {
             this.id = id;
         }
